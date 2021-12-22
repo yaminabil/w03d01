@@ -62,11 +62,88 @@ class Person {
       this.bankAccount+=10;
     }
     buyHamster (Hamster) {
-        if(typeof Hamster === 'Object'){
-        this.Hamster.push (Hamster) ;
+        if ( typeof Hamster === 'object'){
+        this.Hamster.push (Hamster.name) ;
         this.mood += 10 ;
         this.bankAccount -= Hamster.getPrice();
-    } else return console.log (hamster + " isnt an object ");
+    } else return console.log (Hamster + " isnt an object ");
 
 }
 }
+
+const Timmy = new Person ('Timmy');
+
+//console.log (Timmy);
+
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+
+//console.log(Timmy);
+
+Timmy.eat();
+Timmy.eat();
+Timmy.eat();
+Timmy.eat();
+Timmy.eat();
+ 
+//console.log(Timmy);
+
+Timmy.exercise();
+Timmy.exercise();
+Timmy.exercise();
+Timmy.exercise();
+Timmy.exercise();
+
+//console.log (Timmy);
+
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp();
+Timmy.ageUp(); 
+
+//console.log (Timmy);
+
+const Gus = new Hamster ("Gus");
+Gus.owner = "Timmy";
+//console.log (Gus);
+
+Timmy.buyHamster (Gus);
+//console.log(Timmy);
+
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+Timmy.ageUp ();
+
+console.log (Timmy);
+
+Timmy.eat();
+Timmy.eat();
+
+console.log (Timmy);
+
+Timmy.exercise();
+Timmy.exercise();
+
+console.log (Timmy);
+
+
