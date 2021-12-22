@@ -1,0 +1,5 @@
+class hamster {
+    constructor (){
+        
+    }
+}
